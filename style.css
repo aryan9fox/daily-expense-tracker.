@@ -1,0 +1,140 @@
+/* Basic body background */
+body {
+  background-color: #efefef;
+}
+
+/* Simple icon style */
+.feather {
+  width: 20px;
+  height: 20px;
+  stroke: #4d4d4d;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  vertical-align: bottom;
+}
+
+/* Sidebar background */
+.list-group {
+  background-color: white;
+}
+
+/* Remove border from list items */
+.list-group-item {
+  border: none;
+}
+
+/* User section center aligned */
+.user {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Padding for user image */
+.user img {
+  padding: 10px;
+}
+
+/* Button style for toggler */
+.toggler {
+  color: black;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+/* Active sidebar link style */
+.sidebar-active {
+  color: #47a04b;
+  font-weight: bold;
+}
+
+/* Change icon color when active */
+.sidebar-active .feather {
+  stroke: #47a04b;
+}
+
+/* Wrapper styles */
+#wrapper {
+  overflow-x: hidden;
+  background-color: white;
+}
+
+/* Sidebar styles */
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -240px; /* Hide sidebar by moving left */
+  transition: margin 0.3s ease;
+}
+
+/* Sidebar heading style */
+#sidebar-wrapper .sidebar-heading {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* Sidebar list width */
+#sidebar-wrapper .list-group {
+  width: 240px;
+}
+
+/* Page content area */
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+/* Show sidebar when toggled */
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+/* For bigger screens */
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -240px;
+  }
+}
+
+/* Card style with margin */
+.card {
+  margin-bottom: 10px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Container margin */
+.container-fluid {
+  margin-right: 20px;
+}
+
+/* Simple gradient backgrounds for cards */
+.card-gradient-1 {
+  background: linear-gradient(to right, #93291e, #ed213a);
+  color: white;
+  border: none;
+}
+
+.card-gradient-2 {
+  background: linear-gradient(to right, #e44d26, #f16529);
+  color: white;
+  border: none;
+}
+
+.card-gradient-3 {
+  background: linear-gradient(to right, #753a88, #cc2b5e);
+  color: white;
+  border: none;
+}
+
+
